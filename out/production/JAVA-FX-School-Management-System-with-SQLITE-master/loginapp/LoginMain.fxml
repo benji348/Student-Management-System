@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainpane" prefHeight="310.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginapp.LoginMainController">
+   <children>
+      <Label fx:id="dbstatus" alignment="CENTER" layoutX="170.0" layoutY="34.0" prefHeight="25.0" prefWidth="246.0" style="-fx-background-color: #5cb558;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="AdobeDevanagari-Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="username" layoutX="200.0" layoutY="92.0" prefHeight="25.0" prefWidth="186.0" promptText="Enter Username" stylesheets="@../Home/style.css">
+         <font>
+            <Font name="AdobeDevanagari-Regular" size="14.0" />
+         </font></TextField>
+      <Button fx:id="loginButton" layoutX="198.0" layoutY="203.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="186.0" stylesheets="@../Home/style.css" text="Log In" />
+      <PasswordField fx:id="password" layoutX="199.0" layoutY="128.0" prefHeight="25.0" prefWidth="186.0" promptText="Enter Password" stylesheets="@../Home/style.css">
+         <font>
+            <Font name="AdobeDevanagari-Regular" size="14.0" />
+         </font></PasswordField>
+      <ComboBox fx:id="combobox" layoutX="199.0" layoutY="165.0" prefHeight="27.0" prefWidth="186.0" promptText="select" stylesheets="@../Home/style.css" />
+      <Label layoutX="71.0" layoutY="33.0" prefHeight="25.0" prefWidth="77.0" text="DB Status" textFill="#094372">
+         <font>
+            <Font name="Californian FB" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="92.0" prefHeight="25.0" prefWidth="77.0" text="Username">
+         <font>
+            <Font name="AdobeDevanagari-Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="128.0" prefHeight="25.0" prefWidth="77.0" text="Password">
+         <font>
+            <Font name="AdobeDevanagari-Regular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
